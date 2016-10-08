@@ -1,0 +1,49 @@
+$primary-color: #5c1bb7;
+$dark-grey: #222222;
+$footer:#1f1f1f;
+
+html,body{
+	width:100vw;
+	height:100vh;
+}
+i{
+	color:$primary-color;
+
+}
+.fa{font-size: 2em;}
+a{
+	color:#555555;
+
+}
+a:hover{
+		color:$primary-color;
+		text-decoration: none;
+	}
+.jumbotron{
+	position:relative;
+	width:100vw;
+	height:100vh;
+	background:
+	linear-gradient(
+      rgba(92,27,183,0.5), 
+      rgba(92,27,183,0.5)
+    ),
+    url(../img/office.jpeg) no-repeat center center;
+	background-size:cover;
+	margin-bottom:0;
+}
+#layers,#brands{
+	background:$primary-color;
+	color:#fff;
+}
+#brands ul{
+	margin-bottom:0;
+	padding: 20px 0;
+}
+#services,#contact{
+	background:$dark-grey;
+	
+}
+footer{
+	background:$footer;
+}

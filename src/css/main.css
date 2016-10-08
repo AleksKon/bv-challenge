@@ -1,0 +1,38 @@
+html, body {
+  width: 100vw;
+  height: 100vh; }
+
+i {
+  color: #5c1bb7; }
+
+.fa {
+  font-size: 2em; }
+
+a {
+  color: #555555; }
+
+a:hover {
+  color: #5c1bb7;
+  text-decoration: none; }
+
+.jumbotron {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(92, 27, 183, 0.5), rgba(92, 27, 183, 0.5)), url(../img/office.jpeg) no-repeat center center;
+  background-size: cover;
+  margin-bottom: 0; }
+
+#layers, #brands {
+  background: #5c1bb7;
+  color: #fff; }
+
+#brands ul {
+  margin-bottom: 0;
+  padding: 20px 0; }
+
+#services, #contact {
+  background: #222222; }
+
+footer {
+  background: #1f1f1f; }
