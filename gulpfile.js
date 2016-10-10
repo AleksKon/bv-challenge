@@ -19,7 +19,7 @@ gulp.task('css', function () {
     .pipe(autoprefixer('last 2 versions'))
     .pipe(gulp.dest('src/css'))
     .pipe(browserSync.stream());
-    // I'm using useref so css concatination happens there
+    // Useref concatinates CSS
 });
 
 // Fonts
@@ -30,16 +30,14 @@ gulp.task('fonts', function() {
             .pipe(gulp.dest('dist/fonts/'));
 });
 
-// I'm using useref so js concatination happens there
-
 // Optimize Images
 gulp.task('images', function(){
-	return gulp.src('src/images/**')
+	return gulp.src('src/img/**')
 	.pipe(imagemin({
 		progressive: true,
 		interlaced: true
 	}))
-	.pipe(gulp.dest('dist/images'));
+	.pipe(gulp.dest('dist/img'));
 });
 
 // HTML
@@ -64,14 +62,11 @@ gulp.task('serve', ['css'], function(){
 	// Watch SASS files
 	gulp.watch('src/scss/**/*.scss', ['css', reload]);
 
-	// Watch JS files
-	//gulp.watch('src/js/**/*.js', ['lint', 'js', reload]);
-
 	// Watch html files
 	gulp.watch('src/**/*.html', reload);
 
 	// Watch html files
-	gulp.watch('src/images/**', reload);
+	gulp.watch('src/img/**', reload);
 	
 });
 

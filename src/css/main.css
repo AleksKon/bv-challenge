@@ -1,38 +1,260 @@
-html, body {
+/*================
+	GLOBALS
+=================*/
+body {
+  position: relative;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  color: #393a39;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 1.6em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeelegibility;
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-size: 2.5em;
+  padding-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500; }
 
 i {
   color: #5c1bb7; }
 
 .fa {
-  font-size: 2em; }
+  font-size: 1.5em; }
 
 a {
   color: #555555; }
+  a:hover {
+    color: #5c1bb7;
+    text-decoration: none; }
 
-a:hover {
-  color: #5c1bb7;
-  text-decoration: none; }
+/*====================
+	NAVIGATION
+=====================*/
+.navbar {
+  border-bottom: 1px solid #5c1bb7 !important;
+  background-color: #5c1bb7;
+  color: #fafafa; }
+  .navbar .navbar-toggle {
+    color: #5c1bb7 !important; }
+  .navbar span.icon-bar {
+    background: #fafafa !important; }
+  .navbar .navbar-brand {
+    color: #fafafa;
+    margin-top: 8px; }
+  .navbar a {
+    color: #fafafa; }
+  .navbar .nav li a {
+    line-height: 30px;
+    transition: background .3s ease-in-out; }
+    .navbar .nav li a:link {
+      background: transparent; }
+    .navbar .nav li a:visited {
+      background: transparent; }
+    .navbar .nav li a:hover {
+      border-bottom: 2px solid #fafafa;
+      background: transparent; }
+    .navbar .nav li a:active {
+      background: transparent; }
+  .navbar .nav .active {
+    border-bottom: 2px solid #fafafa;
+    background: transparent; }
 
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding: 15px 0;
+    border-bottom: none !important;
+    letter-spacing: 1px;
+    background: transparent;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out; }
+  .top-nav-collapse {
+    padding: 0;
+    background-color: #5c1bb7; } }
+
+/*====================
+	HOME - jumbotron
+=====================*/
 .jumbotron {
-  position: relative;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(rgba(92, 27, 183, 0.5), rgba(92, 27, 183, 0.5)), url(../img/office.jpeg) no-repeat center center;
+  background: linear-gradient(rgba(92, 27, 183, 0.6), rgba(92, 27, 183, 0.6)), url(../img/office.jpeg) no-repeat center center;
   background-size: cover;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  color: #fafafa; }
+  .jumbotron .btn {
+    background: #5c1bb7;
+    margin-top: 25px;
+    border: 1px solid #5c1bb7;
+    padding: 12px 50px;
+    color: #fafafa;
+    font-size: 20px;
+    font-weight: bold; }
+    .jumbotron .btn:hover span {
+      padding-left: 5px; }
+  .jumbotron .content-container {
+    width: 65vw;
+    height: 100vh;
+    display: table;
+    margin: auto;
+    z-index: 100; }
+  .jumbotron .content {
+    display: table-cell;
+    vertical-align: middle; }
+    .jumbotron .content h1 {
+      font-size: 5em; }
 
-#layers, #brands {
+#layers {
+  padding: 60px 0;
   background: #5c1bb7;
   color: #fff; }
+  #layers .btn {
+    background: transparent;
+    margin-top: 40px;
+    border: 2px solid #fafafa;
+    padding: 10px 50px;
+    color: #fafafa; }
+    #layers .btn:hover span {
+      padding-left: 5px; }
+
+.features-slider {
+  position: relative;
+  padding-top: 30px; }
+  .features-slider ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .features-slider ul li {
+      width: 100%; }
+  .features-slider .flickity-page-dots {
+    text-align: left;
+    position: static;
+    margin-top: 25px;
+    margin-bottom: 25px; }
+    .features-slider .flickity-page-dots .dot {
+      margin: 0 12px 0 0;
+      background: #fafafa; }
+    .features-slider .flickity-page-dots .dot.is-selected {
+      opacity: 1; }
+
+/*====================
+	SERVICES
+=====================*/
+#services, #contact {
+  padding: 60px 0;
+  background: #222222;
+  color: #7b7b7b; }
+  #services h1, #contact h1, #services h3, #contact h3 {
+    color: #fafafa; }
+  #services .col-sm-4, #contact .col-sm-4 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px; }
+    #services .col-sm-4 .fa, #contact .col-sm-4 .fa {
+      font-size: 3em; }
+    #services .col-sm-4 h3, #contact .col-sm-4 h3 {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+
+/*====================
+	ABOUT
+=====================*/
+#about {
+  padding: 60px 0; }
+  #about .col-md-3, #about .col-sm-6 {
+    margin-top: 80px;
+    margin-bottom: 80px; }
+  #about h3 {
+    color: #5c1bb7;
+    font-size: 30px; }
+  #about .title {
+    text-transform: uppercase;
+    color: #800080;
+    font-weight: bold;
+    font-size: 16px; }
 
 #brands ul {
-  margin-bottom: 0;
+  background: #5c1bb7;
+  margin-bottom: -60px;
   padding: 20px 0; }
+  #brands ul li {
+    width: 20%; }
+    #brands ul li img {
+      display: block;
+      margin: auto; }
 
-#services, #contact {
-  background: #222222; }
+/*====================
+	CONTACT
+=====================*/
+#contact strong {
+  color: #fafafa;
+  line-height: 1.6em; }
 
+#contact li {
+  display: inline-block;
+  padding-right: 2px;
+  padding-left: 2px; }
+
+#contact .col-sm-6, #contact .col-sm-3 {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+#contact .fa {
+  color: #393a39;
+  letter-spacing: 0px; }
+  #contact .fa:hover {
+    color: #5c1bb7; }
+
+#contact .form-control {
+  padding: 20px 15px;
+  line-height: 1.8;
+  color: #fafafa;
+  letter-spacing: 0.8px;
+  border: transparent;
+  box-shadow: none;
+  outline: none;
+  background: #2a2b2a; }
+
+#contact button {
+  background: transparent;
+  border: 2px solid #393a39;
+  padding: 10px 50px;
+  color: #7b7b7b; }
+  #contact button:hover {
+    border: 2px solid #5c1bb7;
+    color: #5c1bb7; }
+
+/*====================
+	FOOTER
+=====================*/
 footer {
-  background: #1f1f1f; }
+  background: #1f1f1f;
+  padding-top: 40px; }
+  footer h4 {
+    color: #fafafa; }
+  footer .copy p {
+    border-top: 1px solid #393a39;
+    padding: 8px 5px;
+    margin-top: 30px;
+    font-size: 16px; }
+
+/*====================
+	MEDIA QUERIES
+=====================*/
+@media screen and (max-width: 768px) {
+  .content-container {
+    width: 90vw !important; }
+    .content-container .content h1 {
+      font-size: 4.2em; }
+  #layers {
+    text-align: center; }
+    #layers h1 {
+      font-size: 2.1em; }
+    #layers img {
+      width: 70%;
+      margin-top: 40px;
+      margin-bottom: 40px; }
+  .features-slider .flickity-page-dots {
+    text-align: center; } }
