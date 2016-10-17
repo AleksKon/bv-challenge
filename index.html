@@ -11,8 +11,8 @@
     <title>Some Company</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,500" rel="stylesheet">
-    <link rel="stylesheet" href="css/bundle.css">
 
+    <link rel="stylesheet" href="css/bundle.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -22,9 +22,12 @@
   </head>
 
   <body data-spy="scroll" data-target="#navbar">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
     <!-- NAV BAR -->
     <nav class="navbar  navbar-fixed-top fixed-top-20">
- 
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -46,37 +49,32 @@
       </div>
     </nav>
 
-
   <!-- HOME
       =================================================== --> 
     <section id="home">
-        <div class="jumbotron text-center">
-        
-          <div class="container">
-            <div class="content-container">
-              <div class="content">
-                <h1>Welcome!</h1>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nulla non ab libero voluptates, animi dolore ea, natus. Voluptatum consectetur nulla fugiat sequi eum sapiente quam laboriosam magnam autem praesentium.</p>
-                <p><a class="btn btn-default btn-lg" href="#" role="button">Learn more <span>&raquo;</span></a></p>
-              </div>
-            </div>       
-          </div>
-        </div>
-        <div id="layers">
-          <div class="container">
-            <div class="row">
+      <div class="jumbotron text-center">
+        <div class="container">
+          <div class="content-container">
+            <div class="content">
+              <h1>Welcome!</h1>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nulla non ab libero voluptates, animi dolore ea, natus. Voluptatum consectetur nulla fugiat sequi eum sapiente quam laboriosam magnam autem praesentium.</p>
+              <p><a class="btn btn-default btn-lg" href="#" role="button">Learn more <span>&raquo;</span></a></p>
+            </div>
+          </div>       
+        </div><!--.container-->
+      </div><!--.jumbotron-->
+      <div id="layers">
+        <div class="container">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-6">
                 <h1 class="">Redefining The Web</h1>
               </div>
             </div>
-
-                  
-
-                <div class="col-sm-6">
-                  <img class="img-responsive center-block" src="img/layers.png" alt="Layers">
-                </div>
-                <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <img class="img-responsive center-block" src="img/layers.png" alt="Layers">
+              </div>
+              <div class="col-sm-6">
                 <div class="features-slider">
                   <ul class="slides" id="featuresSlider">
                     <li>
@@ -93,53 +91,53 @@
 
                     </li>
                   </ul>
-              </div>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more <span>&raquo;</span></a></p>
                 </div>
-            </div><!--.row-->
-          </div><!--.container-->
-        </div><!--.layers-->   
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more <span>&raquo;</span></a></p>
+              </div>
+          </div><!--.row-->
+        </div><!--.container-->
+      </div><!--.layers-->   
     </section>
 
     <!-- SERVICES
       =================================================== --> 
     <section id="services">
       <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2  text-center">
+        <div class="row text-center">
+            <div class="col-md-8 col-md-offset-2  ">
               <h1>Services</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, voluptatum deserunt debitis omnis minima, alias nulla magnam natus dicta.Voluptatum consectetur nulla fugiat sequi eum sapiente quam laboriosam magnam autem praesentium.</p>
             </div>
           </div><!--.row-->
-          <div class="row">
-            <div class="col-sm-4 text-center">
+          <div class="row text-center">
+            <div class="col-sm-4 ">
               <p><i class="fa fa-lightbulb-o" aria-hidden="true"></i></p>
               <h3>Unique Layouts</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, corporis, aperiam. Ea nam esse unde aut dolore architecto ullam ut hic veniam inventore reiciendis, omnis repudiandae fugiat.</p>
             </div>
-            <div class="col-sm-4 text-center">
+            <div class="col-sm-4">
               <p><i class="fa fa-mobile" aria-hidden="true"></i></p>
               <h3>Responsive</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, corporis, aperiam. Ea nam esse unde aut dolore architecto ullam ut hic veniam inventore reiciendis, omnis repudiandae fugiat.</p>
             </div>
-            <div class="col-sm-4 text-center">
+            <div class="col-sm-4">
               <p><i class="fa fa-spinner" aria-hidden="true"></i></p>
               <h3>Ajax Transitions</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, corporis, aperiam. Ea nam esse unde aut dolore architecto ullam ut hic veniam inventore reiciendis, omnis repudiandae fugiat.</p>
             </div>
           </div><!--.row-->
-            <div class="row">
-            <div class="col-sm-4 text-center">
+            <div class="row text-center">
+            <div class="col-sm-4">
               <p><i class="fa fa-shopping-bag" aria-hidden="true"></i></p>
               <h3>E-Commerce</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, corporis, aperiam. Ea nam esse unde aut dolore architecto ullam ut hic veniam inventore reiciendis, omnis repudiandae fugiat.</p>
             </div>
-            <div class="col-sm-4 text-center">
+            <div class="col-sm-4">
               <p><i class="fa fa-th" aria-hidden="true"></i></p>
               <h3>Unlimited Portfolios</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, corporis, aperiam. Ea nam esse unde aut dolore architecto ullam ut hic veniam inventore reiciendis, omnis repudiandae fugiat.</p>
             </div>
-            <div class=" col-sm-4 text-center">
+            <div class=" col-sm-4">
               <p><i class="fa f fa-bolt" aria-hidden="true"></i></p>
               <h3>Powerful</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, corporis, aperiam. Ea nam esse unde aut dolore architecto ullam ut hic veniam inventore reiciendis, omnis repudiandae fugiat.</p>
@@ -159,8 +157,8 @@
           </div>
         </div>
       
-      <div class="row">
-        <div class="col-md-3 col-sm-6 text-center">
+      <div class="row text-center">
+        <div class="col-md-3 col-sm-6">
           <img class="img-responsive center-block" src="img/team-01.png" alt="Team Member">
           <h3>John Smith</h3>
           <p class="title">Founder</p>
@@ -171,7 +169,7 @@
             <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
           </ul>
         </div>
-        <div class="col-md-3 col-sm-6 text-center">
+        <div class="col-md-3 col-sm-6">
           <img class="img-responsive center-block" src="img/team-02.png" alt="Team Member">
           <h3>Karen McCord</h3>
           <p class="title">Chief Technology Officer</p>
@@ -183,7 +181,7 @@
           </ul>
         </div>
 
-        <div class="col-md-3 col-sm-6 text-center">
+        <div class="col-md-3 col-sm-6">
           <img class="img-responsive center-block" src="img/team-03.png" alt="Team Member">
           <h3>Howard Williams</h3>
           <p class="title">Creative Director</p>
@@ -195,7 +193,7 @@
           </ul>
         </div>
 
-        <div class="col-md-3 col-sm-6 text-center">
+        <div class="col-md-3 col-sm-6">
           <img class="img-responsive center-block" src="img/team-01.png" alt="Team Member">
           <h3>Neil Leakes</h3>
           <p class="title">Director of Marketing</p>
@@ -286,60 +284,60 @@
     
     <!-- FOOTER
       =================================================== --> 
-      <footer>
-        <div class="container">
-          <div class="row ">
-          <div class="col-sm-6">
-            <div class="row">
-              <div class="col-xs-6 col-sm-6">
-                <h4>About</h4>
-                  <ul class="list-unstyled">
-                    <li><a href="">Company</a></li>
-                    <li><a href="">Jobs</a></li>
-                    <li><a href="">Press</a></li>
-                    <li><a href="">Engineering</a></li>
-                  </ul>
-              </div>
-              <div class="col-xs-6 col-sm-6">
-                <h4>Team Solutions</h4>
-                  <ul class="list-unstyled">
-                    <li><a href="">Marketing</a></li>
-                    <li><a href="">Project Management</a></li>
-                    <li><a href="">Managers</a></li>
-                  </ul>            
-              </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6">
-            <div class="row">
-              <div class="col-xs-6 col-sm-6">
-                <h4>Apps</h4>
-                  <ul class="list-unstyled">
-                    <li><a href="">Intergrations</a></li>
-                    <li><a href="">iOS</a></li>
-                    <li><a href="">Android</a></li>
-                  </ul>
-              </div>
-              <div class="col-xs-6 col-sm-6">
-                <h4>Support</h4>
-                  <ul class="list-unstyled">
-                    <li><a href="">Costumer Success</a></li>
-                    <li><a href="">Terms & Privacy</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Developers</a></li>
-                  </ul>  
-              </div>
-              </div>
-            </div>
-          </div><!-- row -->
+    <footer>
+      <div class="container">
+        <div class="row ">
+        <div class="col-sm-6">
           <div class="row">
-            <div class="copy col-xs-12 col-sm-12">
-              <p>&copy; 2016 SomeCompany.com</p>
+            <div class="col-xs-6 col-sm-6">
+              <h4>About</h4>
+                <ul class="list-unstyled">
+                  <li><a href="">Company</a></li>
+                  <li><a href="">Jobs</a></li>
+                  <li><a href="">Press</a></li>
+                  <li><a href="">Engineering</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-6">
+              <h4>Team Solutions</h4>
+                <ul class="list-unstyled">
+                  <li><a href="">Marketing</a></li>
+                  <li><a href="">Project Management</a></li>
+                  <li><a href="">Managers</a></li>
+                </ul>            
+            </div>
             </div>
           </div>
-        </div><!-- container -->    
-      </footer>
+
+          <div class="col-sm-6">
+          <div class="row">
+            <div class="col-xs-6 col-sm-6">
+              <h4>Apps</h4>
+                <ul class="list-unstyled">
+                  <li><a href="">Intergrations</a></li>
+                  <li><a href="">iOS</a></li>
+                  <li><a href="">Android</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-6">
+              <h4>Support</h4>
+                <ul class="list-unstyled">
+                  <li><a href="">Costumer Success</a></li>
+                  <li><a href="">Terms & Privacy</a></li>
+                  <li><a href="">Contact Us</a></li>
+                  <li><a href="">Developers</a></li>
+                </ul>  
+            </div>
+            </div>
+          </div>
+        </div><!-- row -->
+        <div class="row">
+          <div class="copy col-xs-12 col-sm-12">
+            <p>&copy; 2016 SomeCompany.com</p>
+          </div>
+        </div>
+      </div><!-- container -->    
+    </footer>
 
     <script src="js/bundle.js"></script>
 
