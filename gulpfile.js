@@ -3,14 +3,12 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
-var eslint = require('gulp-eslint');
 var imagemin = require('gulp-imagemin');
 var useref = require('gulp-useref');
 var gulpif = require('gulp-if');
 var uglify = require('gulp-uglify');
 var cssnano = require('gulp-cssnano');
 var ghPages = require('gulp-gh-pages');
-
 
 // CSS
 gulp.task('css', function () {
@@ -65,9 +63,11 @@ gulp.task('serve', ['css'], function(){
 	// Watch html files
 	gulp.watch('src/**/*.html', reload);
 
-	// Watch html files
+	// Watch images
 	gulp.watch('src/img/**', reload);
 	
+	// Watch js files
+	gulp.watch('src/**/*.js', reload);
 });
 
 // Build and serve the output from the dist build

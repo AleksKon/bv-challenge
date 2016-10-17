@@ -34,9 +34,6 @@ $('.nav a').on('click touchstart',function () {
 
 	$('.navbar-collapse').collapse('hide');
 });
-$(document).on('click touchstart',function(){
-	$('.collapse').collapse('hide');
-});
 
 // Slider
 
@@ -50,13 +47,12 @@ $('#featuresSlider').flickity({
 // Hero image animated
 
 $('.jumbotron').mousemove(function(e){
-var containerWidth = $(this).innerWidth(),  
-containerHeight = $(this).innerHeight(),
-mousePositionX = (e.pageX / containerWidth) * 100,
-mousePositionY = (e.pageY /containerHeight) * 100;
+	var containerWidth = $(this).innerWidth(),  
+	containerHeight = $(this).innerHeight(),
+	mousePositionX = (e.pageX / containerWidth) * 100,
+	mousePositionY = (e.pageY /containerHeight) * 100;
 
-$(this).css('background-position', mousePositionX + '%' + ' ' + mousePositionY + '%');
-
+	$(this).css('background-position', mousePositionX + '%' + ' ' + mousePositionY + '%');
 });
 
 
